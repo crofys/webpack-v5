@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    // "strict": true,
+    "module": "commonjs",
+    "target": "es5",
+    "esModuleInterop": true,
+    "jsx": "react",
+    "allowJs": true,
+    "checkJs": true,
+    // "noImplicitAny": true,
+    // "importHelpers": true,
+    "noEmit": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "lib": ["esnext", "dom"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}
