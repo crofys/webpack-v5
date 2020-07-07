@@ -97,13 +97,7 @@ const BaseConfig: webpack.Configuration = {
     ],
   },
   plugins: [
-    // new webpack.DllReferencePlugin({
-    //   manifest: Resolve('dist/manifest.json'),
-    //   name: '[name]_[hash]',
-    //   context: '',
-    // }),
-    // 使用 Day.js 替换 Moment.js 优化打包大小
-    // new AntdDayjsWebpackPlugin(),
+    new webpack.EnvironmentPlugin(['NODE_ENV', 'DEBUG']),
     /**
      * @description 定义全局变量插件
      */
